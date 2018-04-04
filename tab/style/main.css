@@ -1,0 +1,108 @@
+body, html
+{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+li
+{
+    list-style-type:none;
+}
+.tab
+{
+    display: flex;
+    flex-direction: column;
+    border: solid  1px lightgray;
+    background-color: #ffffff;
+    padding: 40px;
+}
+.blank
+{
+    flex: 1;
+    border: solid  lightgray;
+    border-width: 0 0 1px 0;
+}
+.tab-headerContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+.tab-header
+{
+    border: solid  lightgray;
+    border-width: 0 0 1px 0;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    color: #b9b9b9;
+}
+.tab-header:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+    color: #555555;
+}
+.tab-header_active
+{
+    border-width: 1px 1px 0px 1px;
+    color: black;
+    
+}
+.tab-contentContainer
+{
+    padding-top: 20px;
+}
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.menu-header-block
+{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: solid #5a5859 1px;
+    background-color: black;
+    color: white;
+}
+.menu-detailContainer
+{
+
+}
+.menu-detail
+{
+    padding: 0;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 82px;
+    margin: 0 0 0 0px;
+    
+}
+.menu-detail-block
+{
+    width: 82px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #003862;
+    color: white;
+}
+.menu-detail-block:hover
+{
+    background-color: #001d33;
+    cursor: pointer;
+}
+.menu-col1:hover .menu-detail1, .menu-col2:hover .menu-detail2, .menu-col3:hover .menu-detail3
+{
+    display: flex;
+}
+
